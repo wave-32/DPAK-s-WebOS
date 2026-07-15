@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!-- This is the start of the greatest OS you will ever see-->
+<!-- Btw Steph Curry is the GOAT!!! -->
+<!-- Did you know Steph Curry was drafted 7th overall in the 2009 NBA Draft, what were the other teams who drafted above thinking????-->
+
+<html>
+<head>
+<title>DPAKOS</title>
+<style>
+body {
+    animation: fadeIn 1s forwards;
+    background-image: url(https://i.pinimg.com/originals/3b/f3/8e/3bf38ea2f42cdae033637190221f774f.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: white;
+    margin: 0;
+    padding: 20px;
+} 
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;}
+        to { opacity: 1;}
+}
+
+.window {
+
+    position: absolute;
+width: 250px;
+
+    background: rgba(255,255,255,0.25);
+
+backdrop-filter: blur(10px);
+
+    border-radius: 16px;
+padding: 10px;
+
+    color: white;
+    box-shadow: 0 0 15px black;
+    transition: transform 0.2s;
+}
+.window:hover {
+    transform: scale(1.05);
+}
+.title-bar {
+
+    background: rgba(0, 0, 0, 0.3);
+
+    padding: 8px;
+
+    border-radius: 12px;
+
+    cursor: move;
+
+    font-weight: bold;
+    user-select: none;
+
+}
+
+.content {
+    padding: 15px;
+}
+.window:hover {
+    transform: scale(1.05);
+}
+
+.content {
+    padding: 15px;
+}
+
+.taskbar-item {
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 4px 12px;
+    border-radius: 16px;
+    margin: 0 10px;
+    backdrop-filter: blur(5px);
+}
+
+a {
+    color: lightblue;
+}
+</style>
+
+</head>
+
+<body>
+
+    
+<h1 style="color: lightblue;"> Welcome to my OS</h1>
+<h2 style="color: lightgoldenrodyellow;">This is the introduction to my WebOS </h2>
+<p> This is Steph Curry, he is a 2 time MVP, <br>
+ One of them being UNANIMOUS, 
+<br>greatest 3 point shooter of all time. 
+<br>He has 4 championships and 
+<br>is arguably the greatest player of all time</p>
+<img style="width: 256px; height: 256px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPLm9wcv_rMZe6Ye3RmwY2kQ8QUVQt-GOuo3fIgnHXRw&s=10" />
+
+    <br>
+    <br>
+    Basketball is the greatest sport of all time. 
+
+    <div style="border: solid; width: 256px; border-radius: 64px">
+        &emsp; Argue with me, I dare you!
+    </div>
+
+<div style="display: flex; color: blue; justify-content: space-between;">
+        <p>
+            Winter soldier steph is too cold 🥶
+        </p>
+        
+<!-- winter soldier steph refers to when Steph curry got injured on his shoulder in 2022, but then
+ came back better than ever and became superhuman!!!-->    
+</div>
+<div style="display: flex; justify-content: space-between;">
+        This is a very tuff OS ik
+</div>
+<!-- plzzzz follow me on insta, I neeeeed followers: dheepak_25-->
+<div style="display: flex; align-items: center; width: 100%;"> 
+<p style="margin-left: 16px; background-color: rgba(255, 255, 255, 0.25); padding: 4px 12px; border-radius: 16px;">
+            Locked in
+        </p>
+<p style="margin: 0 auto; background-color: rgba(255, 255, 255, 0.25); padding: 4px 12px; border-radius: 16px;">
+    🔥 Grind Never Stops 🔥
+</p>
+<!-- aura quotes -->
+<div class="window" style="top:100px; left:100px;">
+
+    <div class="title-bar">
+        About Me
+    </div>
+
+    <div class="content">
+        Welcome to DPAKOS!<br>
+        Basketball is the greatest sport ever 🏀🔥🔥
+        <br>
+        Follow me on Instagram: <a href="https://www.instagram.com/dheepak_25">dheepak_25</a>
+    </div>
+
+</div>
+<!-- Basketball is life, 
+ whats there not to like about it?-->
+
+<div class="window" style="top:200px; left:450px;">
+
+    <div class="title-bar">
+        Baloncesto
+    </div>
+
+    <div class="content">
+        #1  Winter Soldier Steph 🥶<br>
+        #2 2016 Stephen Curry 🔥<br>
+        #3 2021 Stephen Curry 🏀<br>
+    </div>
+
+</div>
+<!-- Did you know Steph curry led the league in 3 point percentage and points scored per game in 2021,
+ He also led the league in steals per game and points per game and total 3 pointers made in 2016,
+ and in 2022 he broke his shoulder, but came back better than ever!!!-->
+
+
+<div class="window" style="top:350px; left:250px;">
+
+    <div class="title-bar">
+        Motivation
+    </div>
+
+    <div class="content">
+    🔥 Grind Never Stops 🔥
+        <br>
+        Stay Locked In🔥
+        <br>
+        Work like you never won🔥 play like you never lost🔥
+    </div>
+<!-- how bro felt after saying that: 🥶🥶🥶🥶-->
+</div>
+<p id="timeElement"
+style="margin-right: 16px; background-color: rgba(255, 255, 255, 0.25); padding: 4px 12px; border-radius: 16px;">
+</p>
+</div>
+<p id="battery" style="margin-right:16px;">
+🔋 67%
+</p>
+<!-- Tuff number I know -->
+<!-- This battery is my unique feature btw-->
+<script>
+
+    function updateTime() {
+        var currentTime = new Date().toLocaleString();
+        var timeText = document.querySelector("#timeElement");
+        timeText.innerHTML = currentTime;
+    }
+    updateTime();
+    setInterval(updateTime, 1000);
+
+
+
+let windows = document.querySelectorAll(".window");
+setInterval(()=>{
+    document.querySelector("#battery").innerHTML = "🔋" + Math.floor(Math.random()*20+80)+ "%";
+},5000);
+//look at curry man, so inspirational(those who get the refrence are the real ones!!)
+windows.forEach(window => {
+
+let header = window.querySelector(".title-bar");
+
+    let offsetX = 0;
+    let offsetY = 0;
+let dragging = false;
+// this part took sooooooo long
+header.addEventListener("mousedown", function(e){
+
+        dragging = true;
+    offsetX = e.clientX - window.offsetLeft;
+        offsetY = e.clientY - window.offsetTop;
+
+    });
+
+
+    document.addEventListener("mousemove", function(e){
+
+        if(dragging){
+
+         window.style.left = 
+            (e.clientX - offsetX) + "px";
+
+         window.style.top =
+    (e.clientY - offsetY) + "px";
+
+        }
+
+    });
+
+// This part also took a long time, but I got it to work, and it works fine now
+document.addEventListener("mouseup", function(){
+        dragging = false;
+
+    });
+});
+
+// Why is Steph Curry the GOAT? you may ask, well hes the GOAT because he redifined and changed the game of basketball forever
+</script>
+</body>
+</html>
+<!--This is the end of the greatest OS you have ever seen-->
